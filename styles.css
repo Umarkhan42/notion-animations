@@ -1,0 +1,53 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #191919;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    /* Prevent scrolling */
+}
+
+/* The container for the scattered text */
+#container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Style for the text elements */
+.text {
+    position: absolute;
+    font-size: 1.5rem;
+    color: #aaaaaa;
+    white-space: nowrap;
+    /* Ensure single-line text */
+    opacity: 0;
+    animation: wave 5s ease-in-out, fadeOut 5s forwards;
+}
+
+/* Create the wave effect that moves from left to right */
+@keyframes wave {
+    0% {
+        color: #aaaaaa;
+    }
+
+    50% {
+        color: #ffffff;
+    }
+
+    100% {
+        color: #333333;
+    }
+}
+
+/* Fade out effect as the text becomes grey and disappears */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
