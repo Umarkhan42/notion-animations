@@ -9,12 +9,11 @@ body {
     /* All text is white */
     font-family: monospace;
     text-align: center;
-    overflow: hidden;
-    /* Prevent unnecessary page scrolling */
 }
 
 .box {
     display: inline-block;
+    /* Ensure inline alignment */
     padding: 10px;
     border-radius: 5px;
     min-width: 80px;
@@ -26,22 +25,8 @@ body {
     color: white;
     /* White text */
     text-align: center;
-}
-
-.row {
-    display: flex;
-    justify-content: center;
-    /* Center content horizontally */
-    align-items: center;
-    /* Center content vertically */
-    flex-wrap: nowrap;
-    /* Prevent wrapping */
-    gap: 10px;
-    /* Spacing between boxes */
-    overflow-x: auto;
-    /* Allow horizontal scrolling if necessary */
-    padding: 10px;
-    margin: 0;
+    margin: 5px;
+    /* Add spacing between boxes */
 }
 
 h3 {
