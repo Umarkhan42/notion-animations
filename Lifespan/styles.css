@@ -1,0 +1,43 @@
+body {
+    text-align: center;
+    font-family: monospace;
+    background-color: #fff;
+    /* Background of the page */
+    color: white;
+    /* All text is white */
+}
+
+.box {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 80px;
+    height: 60px;
+    border: 3px solid white;
+    /* White outline */
+    background-color: #191919;
+    /* Inside color */
+    color: white;
+    /* White text inside boxes */
+    box-shadow: 2px 2px 5px white;
+    /* White shadow */
+    text-align: center;
+}
+
+h2 {
+    margin-right: 10px;
+    margin-block-start: 5px;
+}
+
+h3 {
+    text-align: center;
+    display: block;
+    color: white;
+    /* Make the "Time Left" text white */
+    margin-top: 20px;
+}
+
+.small {
+    font-size: 15px;
+    font-weight: lighter;
+}
