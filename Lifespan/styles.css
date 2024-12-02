@@ -1,8 +1,8 @@
 body {
     text-align: center;
     font-family: monospace;
-    background-color: #fff;
-    /* Background of the page */
+    background-color: #191919;
+    /* Page background */
     color: white;
     /* All text is white */
 }
@@ -16,11 +16,9 @@ body {
     border: 3px solid white;
     /* White outline */
     background-color: #191919;
-    /* Inside color */
+    /* Box background */
     color: white;
-    /* White text inside boxes */
-    box-shadow: 2px 2px 5px white;
-    /* White shadow */
+    /* White text */
     text-align: center;
 }
 
