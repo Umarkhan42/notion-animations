@@ -27,18 +27,18 @@ body {
 }
 
 .row {
-    margin-bottom: 10px;
-    /* Space between rows */
-}
-
-h2 {
-    margin-right: 10px;
-    margin-block-start: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Allows wrapping on smaller screens */
+    gap: 10px;
+    /* Add spacing between boxes */
+    margin: 20px 0;
 }
 
 h3 {
     text-align: center;
-    display: block;
     color: white;
     /* Make the "Time Left" text white */
     margin-top: 20px;
