@@ -1,10 +1,14 @@
+html,
 body {
-    text-align: center;
-    font-family: monospace;
+    height: 100%;
+    margin: 0;
+    padding: 0;
     background-color: #191919;
     /* Page background */
     color: white;
     /* All text is white */
+    font-family: monospace;
+    text-align: center;
 }
 
 .box {
@@ -20,6 +24,11 @@ body {
     color: white;
     /* White text */
     text-align: center;
+}
+
+.row {
+    margin-bottom: 10px;
+    /* Space between rows */
 }
 
 h2 {
