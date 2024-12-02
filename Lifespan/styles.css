@@ -9,6 +9,8 @@ body {
     /* All text is white */
     font-family: monospace;
     text-align: center;
+    overflow: hidden;
+    /* Prevent unnecessary page scrolling */
 }
 
 .box {
@@ -29,12 +31,17 @@ body {
 .row {
     display: flex;
     justify-content: center;
+    /* Center content horizontally */
     align-items: center;
-    flex-wrap: wrap;
-    /* Allows wrapping on smaller screens */
+    /* Center content vertically */
+    flex-wrap: nowrap;
+    /* Prevent wrapping */
     gap: 10px;
-    /* Add spacing between boxes */
-    margin: 20px 0;
+    /* Spacing between boxes */
+    overflow-x: auto;
+    /* Allow horizontal scrolling if necessary */
+    padding: 10px;
+    margin: 0;
 }
 
 h3 {
