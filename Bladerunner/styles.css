@@ -2,28 +2,37 @@ body {
     background-color: #191919;
     color: white;
     font-family: monospace;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: flex-start;
+    /* Align content to the top-left */
     align-items: flex-start;
+    /* Align content to the top */
     height: 100vh;
-    margin: 0;
+    overflow: hidden;
+    /* Prevent scrollbars */
 }
 
 .terminal {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    max-width: 600px;
+    height: 80%;
+    /* Set a fixed height for the terminal */
+    overflow: hidden;
+    /* Prevent visible scrollbars */
+    background-color: transparent;
+    /* Make the terminal's background invisible */
     padding: 20px;
     box-sizing: border-box;
-}
-
-#output {
-    display: inline;
-}
-
-.cursor {
-    display: inline-block;
-    background-color: white;
-    width: 8px;
-    height: 1em;
-    margin-left: 2px;
+    border: none;
+    /* Remove any border */
+    box-shadow: none;
+    /* Remove glow or shadow effect */
+    position: absolute;
+    /* Allow precise positioning */
+    top: 0;
+    /* Place terminal at the top */
+    left: 0;
+    /* Place terminal at the left */
 }
