@@ -6,7 +6,7 @@ function CountDownLife() {
     const left_minutes = document.getElementById("minutes");
     const left_seconds = document.getElementById("seconds");
 
-    const birthDate = new Date('2003-11-23'); // Corrected birthdate
+    const birthDate = new Date('2003-11-23'); // Your birthdate
     const lifeExpectancyYears = 82.06; // Average life expectancy in years
 
     function showRemainingLife() {

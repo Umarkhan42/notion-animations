@@ -11,32 +11,65 @@ body {
     text-align: center;
 }
 
-.box {
-    display: inline-block;
-    /* Ensure inline alignment */
-    padding: 10px;
-    border-radius: 5px;
-    min-width: 80px;
-    height: 60px;
-    border: 3px solid white;
-    /* White outline */
-    background-color: #191919;
-    /* Box background */
-    color: white;
-    /* White text */
-    text-align: center;
-    margin: 5px;
-    /* Add spacing between boxes */
+#counter {
+    margin-top: 50px;
 }
 
-h3 {
-    text-align: center;
+.time {
+    display: inline-block;
+    /* Keep elements inline */
+    font-size: 24px;
+    /* Adjust font size */
+    margin: 0 10px;
+    /* Add spacing between elements */
     color: white;
-    /* Make the "Time Left" text white */
-    margin-top: 20px;
+    /* Ensure text is white */
 }
 
 .small {
-    font-size: 15px;
+    font-size: 12px;
     font-weight: lighter;
+    display: block;
+    /* Keeps the unit label below the number */
+    text-align: center;
+}
+
+.remove {
+    animation: removeText 0.3s ease-in-out;
+}
+
+.add {
+    animation: addText 0.5s ease-in-out;
+}
+
+@keyframes removeText {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(-10px);
+        /* Move text to the left */
+    }
+}
+
+@keyframes addText {
+    from {
+        opacity: 0;
+        transform: translateX(10px);
+        /* Start text from the right */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        /* Settle back to its original position */
+    }
+}
+
+h3 {
+    margin-top: 20px;
+    color: white;
+    /* Make the "Time Left" text white */
 }
