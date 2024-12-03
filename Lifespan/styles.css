@@ -12,48 +12,26 @@ body {
 }
 
 #counter {
-    display: flex;
-    /* Use flexbox for proper alignment */
-    justify-content: center;
-    /* Center align horizontally */
-    align-items: center;
-    /* Align items vertically */
-    flex-wrap: nowrap;
-    /* Prevent items from wrapping */
     margin-top: 50px;
-    gap: 20px;
-    /* Add space between items */
 }
 
 .time {
     display: inline-block;
-    /* Keep numbers inline */
-    text-align: center;
-    /* Center-align text */
+    /* Keep elements inline */
     font-size: 24px;
     /* Adjust font size */
+    margin: 0 10px;
+    /* Add spacing between elements */
     color: white;
     /* Ensure text is white */
-    margin: 0 5px;
-    /* Add horizontal spacing between numbers */
-    background: none;
-    /* Remove any background */
-    border: none;
-    /* Remove any borders */
-    padding: 0;
-    /* Reset padding */
-    box-shadow: none;
-    /* Remove box shadow */
 }
 
-.time span {
-    display: block;
-    /* Keep the label below the number */
+.small {
     font-size: 12px;
-    /* Smaller font size for labels */
     font-weight: lighter;
-    margin-top: 5px;
-    /* Add space between number and label */
+    display: block;
+    /* Keeps the unit label below the number */
+    text-align: center;
 }
 
 h3 {
