@@ -1,12 +1,3 @@
-* {
-    all: unset !important;
-    /* Reset all inherited styles */
-    box-sizing: border-box;
-    /* Ensure consistent box-sizing */
-    margin: 0;
-    padding: 0;
-}
-
 html,
 body {
     height: 100%;
