@@ -1,8 +1,11 @@
 html,
 body {
     height: 100%;
+    /* Ensure body and html cover the full viewport */
     margin: 0;
+    /* Remove default margins */
     padding: 0;
+    /* Remove default padding */
     background-color: #191919;
     /* Page background */
     color: white;
@@ -19,12 +22,13 @@ body {
     justify-content: center;
     /* Center align horizontally */
     align-items: center;
-    /* Align items vertically */
+    /* Center align vertically */
     flex-wrap: nowrap;
     /* Prevent items from wrapping */
-    margin-top: 50px;
     gap: 20px;
     /* Add space between items */
+    margin: 0 auto;
+    /* Center the container */
 }
 
 .time {
@@ -62,7 +66,8 @@ body {
 }
 
 h3 {
-    margin-top: 20px;
+    margin-top: 10px;
+    /* Reduce top margin to fit content within the viewport */
     color: white;
     /* Make the "Time Left" text white */
     font-weight: bold;
