@@ -17,13 +17,19 @@ body {
 
 .time {
     display: inline-block;
-    /* Keep elements inline */
+    /* Inline alignment */
     font-size: 24px;
     /* Adjust font size */
     margin: 0 10px;
     /* Add spacing between elements */
     color: white;
     /* Ensure text is white */
+    background: none !important;
+    /* Ensure no background */
+    border: none !important;
+    /* Explicitly remove any borders */
+    padding: 0;
+    /* Remove padding */
 }
 
 .small {
@@ -32,40 +38,6 @@ body {
     display: block;
     /* Keeps the unit label below the number */
     text-align: center;
-}
-
-.remove {
-    animation: removeText 0.3s ease-in-out;
-}
-
-.add {
-    animation: addText 0.5s ease-in-out;
-}
-
-@keyframes removeText {
-    from {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 0;
-        transform: translateX(-10px);
-        /* Move text to the left */
-    }
-}
-
-@keyframes addText {
-    from {
-        opacity: 0;
-        transform: translateX(10px);
-        /* Start text from the right */
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-        /* Settle back to its original position */
-    }
 }
 
 h3 {
