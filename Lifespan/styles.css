@@ -12,40 +12,52 @@ body {
 }
 
 #counter {
+    display: flex;
+    /* Use flexbox for proper alignment */
+    justify-content: center;
+    /* Center align horizontally */
+    align-items: center;
+    /* Align items vertically */
+    flex-wrap: nowrap;
+    /* Prevent items from wrapping */
     margin-top: 50px;
+    gap: 20px;
+    /* Add space between items */
 }
 
 .time {
     display: inline-block;
-    /* Keep elements inline */
-    font-size: 24px !important;
+    /* Keep numbers inline */
+    text-align: center;
+    /* Center-align text */
+    font-size: 24px;
     /* Adjust font size */
-    margin: 0 10px !important;
-    /* Add spacing between elements */
-    color: white !important;
+    color: white;
     /* Ensure text is white */
-    background: none !important;
+    margin: 0 5px;
+    /* Add horizontal spacing between numbers */
+    background: none;
     /* Remove any background */
-    border: none !important;
+    border: none;
     /* Remove any borders */
-    padding: 0 !important;
+    padding: 0;
     /* Reset padding */
-    box-shadow: none !important;
-    /* Reset any shadows */
-    text-align: center !important;
-    /* Ensure text is centered */
+    box-shadow: none;
+    /* Remove box shadow */
 }
 
-.small {
-    font-size: 12px !important;
-    font-weight: lighter;
+.time span {
     display: block;
-    /* Keeps the unit label below the number */
-    text-align: center !important;
+    /* Keep the label below the number */
+    font-size: 12px;
+    /* Smaller font size for labels */
+    font-weight: lighter;
+    margin-top: 5px;
+    /* Add space between number and label */
 }
 
 h3 {
-    margin-top: 20px !important;
-    color: white !important;
+    margin-top: 20px;
+    color: white;
     /* Make the "Time Left" text white */
 }
