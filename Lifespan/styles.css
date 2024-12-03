@@ -1,3 +1,12 @@
+* {
+    all: unset !important;
+    /* Reset all inherited styles */
+    box-sizing: border-box;
+    /* Ensure consistent box-sizing */
+    margin: 0;
+    padding: 0;
+}
+
 html,
 body {
     height: 100%;
@@ -17,31 +26,35 @@ body {
 
 .time {
     display: inline-block;
-    /* Inline alignment */
-    font-size: 24px;
+    /* Keep elements inline */
+    font-size: 24px !important;
     /* Adjust font size */
-    margin: 0 10px;
+    margin: 0 10px !important;
     /* Add spacing between elements */
-    color: white;
+    color: white !important;
     /* Ensure text is white */
     background: none !important;
-    /* Ensure no background */
+    /* Remove any background */
     border: none !important;
-    /* Explicitly remove any borders */
-    padding: 0;
-    /* Remove padding */
+    /* Remove any borders */
+    padding: 0 !important;
+    /* Reset padding */
+    box-shadow: none !important;
+    /* Reset any shadows */
+    text-align: center !important;
+    /* Ensure text is centered */
 }
 
 .small {
-    font-size: 12px;
+    font-size: 12px !important;
     font-weight: lighter;
     display: block;
     /* Keeps the unit label below the number */
-    text-align: center;
+    text-align: center !important;
 }
 
 h3 {
-    margin-top: 20px;
-    color: white;
+    margin-top: 20px !important;
+    color: white !important;
     /* Make the "Time Left" text white */
 }
